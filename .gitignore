@@ -1,0 +1,4 @@
+/node_modules/ 过滤整个文件夹
+/client/dist
+/client/node_modules
+
