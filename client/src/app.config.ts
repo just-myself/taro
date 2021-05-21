@@ -2,23 +2,25 @@ export default {
   pages: [
     'pages/index/index',
     'pages/my/my',
+    'pages/product/productList',
     'pages/about/about'
   ],
   tabBar:{
+    "selectedColor": "#4886D8",
     list:[
       {
         pagePath:"pages/index/index",
         text:"首页",
     // 未点击时显示的图片
-        iconPath:"images/home.jpg",
+        iconPath:"images/homeGray.png",
     // 点击后显示的图片
-        selectedIconPath:"images/home.jpg"
+        selectedIconPath:"images/home.png"
       },
       {
         pagePath:"pages/about/about",
         text:"关于我们",
-        iconPath:"images/about.jpg",
-        selectedIconPath:"images/about.jpg"
+        iconPath:"images/contactUsGray.png",
+        selectedIconPath:"images/contactUs.png"
       },
 
     ]

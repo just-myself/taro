@@ -2,12 +2,15 @@ page{
   background:#f4f4f4;
   --margin:18px;
 }
+.banner{
+    width: 100%;
 
+}
 .mainTabList{
   display: flex;
   align-items: center;
   width: 100%;
-  height: 160px;
+  height: 110px;
   padding: 0 24px;
   justify-content: space-around;
   margin:var(--margin) 0;
@@ -32,6 +35,7 @@ page{
     padding: 24px;
     box-sizing: border-box;
     background: #fff;
+    margin-bottom: var(--margin);
     &>view{
         width: 340px;
         height: 160px;
@@ -39,38 +43,48 @@ page{
         border-radius: 20px;
         background: #f4f4f4;
         margin-bottom: 16px;
+        overflow: hidden;
+        position: relative;
+        
+        &>view{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 200px;
+            height: 160px;
+            background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%);
+            line-height: 160px;
+            text-indent: 16px;
+            color: #929292;
+            font-size: 16px;
+
+        }
+        &>image{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 180px;
+            height: 100%;
+        }
     }
 }
-.productShowContent{
+.enterpriseAdvantage{
     margin-bottom: var(--margin);
-    &>.productShowTitle{
+    &>.enterpriseAdvantageTitle{
         width: 100%;
         height: 98px;
-        background: rgba(0, 0, 0, .4);
-        color: #fff;
+        background: #fff;
+        color: #000;
         text-align: center;
         line-height: 98px;
         margin-bottom: var(--margin);
     }
-    &>.productShowList{
-        display: flex;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 24px;
-        box-sizing: border-box;
-        background: #fff;
-
-          &>view{
-            width: 336px;
-            height: 420px;
-            border: 1px solid #f4f4f4;
-            border-radius: 20px;
-            background: #fff;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
+    &>image{
+        width: 100%;
     }
+  
 }
 
 .honor{
@@ -130,33 +144,26 @@ page{
         border-bottom:1px solid #ccc;
         margin-bottom: var(--margin);
     }
-    &>.honorList{
-        display: flex;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 24px;
-        box-sizing: border-box;
-        background: #fff;
-
-          &>view{
-            width: 336px;
-            height: 420px;
-            border: 1px solid #f4f4f4;
-            border-radius: 20px;
-            background: #fff;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
+    .partnerSwiper{
+        width: 100%;
+        height: 480px;
+        overflow: hidden;
     }
-    .scrollview{
-        white-space: nowrap;
-        image{
-            width: 300px;
-            height: 240px;
-            border: 1px solid #ccc;
-            border-radius: 12px;
-            margin-left: 24px;
+    &>swiper{
+        view{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 24px;
+            box-sizing: border-box;
+            &>image{
+                width: 340px;
+                height: 240px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
