@@ -24,6 +24,11 @@ console.log(2,'productList');
 
 
 }
+handleJumpToDetail(id){
+  Taro.navigateTo({
+    url:'/pages/product/productDetail?id='+id
+  })
+}
   render(){
   
     console.log(this,'this');
@@ -32,11 +37,14 @@ console.log(2,'productList');
     return (
       <View className='productList'>
           {productList.map(item=>{
-            return   <View className="productItem">
+            if(item.id){
+              return   <View className="productItem" onClick={this.handleJumpToDetail.bind(this,item.id)}>
               <Image src={item.thumb} className="productThumb"></Image>
               <View className="productTitle"> {item.title}</View>
               <View className="productDesc"> {item.desc}</View>
             </View>
+            }
+
           })}
         
         </View>

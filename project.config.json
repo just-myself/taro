@@ -5,7 +5,7 @@
   "description": "第一个taro项目",
   "appid": "wxc16f3e4eaf8e0bad",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
     "enhance": false,
     "postcss": false,

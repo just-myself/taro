@@ -3,6 +3,8 @@ export default {
     'pages/index/index',
     'pages/my/my',
     'pages/product/productList',
+    'pages/product/productDetail',
+    'pages/customerCase/customerCaseList',
     'pages/about/about'
   ],
   tabBar:{
