@@ -37,6 +37,30 @@ export default class About extends Component {
   }
   formSubmit = e => {
     console.log(e)
+    const {value} = e.detail
+ try {
+  const db = wx.cloud.database()
+  const customerMsg = db.collection('customerMsg')
+  console.log(customerMsg,'customerMsg');
+  customerMsg.add({
+      data:{ ...value,
+    },
+    success: function (res) {
+      // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+      console.log('--------------',res)
+    },
+    fail:err=>{
+      console.log(err);
+      
+    }
+    })
+  } catch (error) {
+    console.log(error,'---2222');
+    
+  }
+
+
+
   }
 
   formReset = e => {

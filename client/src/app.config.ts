@@ -5,6 +5,7 @@ export default {
     'pages/product/productList',
     'pages/product/productDetail',
     'pages/customerCase/customerCaseList',
+    'pages/webview/webview',
     'pages/about/about'
   ],
   tabBar:{
@@ -17,6 +18,22 @@ export default {
         iconPath:"images/homeGray.png",
     // 点击后显示的图片
         selectedIconPath:"images/home.png"
+      },
+      {
+        pagePath:"pages/product/productList",
+        text:"产品中心",
+    // 未点击时显示的图片
+        iconPath:"images/productCenterGray.png",
+    // 点击后显示的图片
+        selectedIconPath:"images/productCenter.png"
+      },
+      {
+        pagePath:"pages/customerCase/customerCaseList",
+        text:"客户案例",
+    // 未点击时显示的图片
+        iconPath:"images/clientCaseGray.png",
+    // 点击后显示的图片
+        selectedIconPath:"images/clientCase.png"
       },
       {
         pagePath:"pages/about/about",

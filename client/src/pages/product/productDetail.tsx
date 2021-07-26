@@ -78,7 +78,7 @@ componentDidMount(){
            
             <SwiperItem style={{display:'flex',alignItems:'center'}}>
 
-              <Image src={item} style={{height:'100%'}}></Image>
+              <Image src={item} mode="heightFix" ></Image>
             </SwiperItem>
              )
             )

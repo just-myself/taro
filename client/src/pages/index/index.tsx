@@ -68,11 +68,11 @@ export default class Index extends Component {
     ]
     const classifyList:{name:string,img:string,id:string}[] = [
       {
-        name:'电磁加热导热油炉',
-        img:'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/classify/ue76-tuya.png',
-        id:'28ee4e3e60b386f31e541dec0d719843'
-     
+        name:'真空硫化机节能改造',
+        img:'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/classify/5_0adu-tuya.jpg',
+        id:'79550af260b381241bcdf23f377c6879'
       },
+
       {
         name:'电网智能优化系统',
         img:'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/classify/dw.jpg',
@@ -84,9 +84,10 @@ export default class Index extends Component {
         id:'79550af260b3813c1bcdfb1f31bc9a8a'
       },
       {
-        name:'真空硫化机节能改造',
-        img:'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/classify/5_0adu-tuya.jpg',
-        id:'79550af260b381241bcdf23f377c6879'
+        name:'电磁加热导热油炉',
+        img:'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/classify/ue76-tuya.png',
+        id:'28ee4e3e60b386f31e541dec0d719843'
+     
       },
       
       
@@ -115,7 +116,26 @@ export default class Index extends Component {
         ]
       }
     ]
-    const enterpriseAdvantageImg  = 'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/uxxh-tuya.png'
+    const honorList = [
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng1.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng2.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng3.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng4.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng5.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng6.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng7.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng8.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng9.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng10.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng11.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng12.jpg',
+      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/productDetail/zheng13.jpg',
+    ]
+
+
+    const enterpriseAdvantageImg  = 'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/youshi.png'
+
+
     return (
       <View className='index'>
            <Swiper
@@ -132,7 +152,7 @@ export default class Index extends Component {
   </SwiperItem>
           })}
       </Swiper>
-       <View className='mainTabList'>
+       {/* <View className='mainTabList'>
          <View onClick={this.handleJumpTo.bind(this,'productList')}>
          <Image src={productCenter} style={{width:30,height:30}} />
            产品中心
@@ -151,7 +171,7 @@ export default class Index extends Component {
          联系我们
          </View>
       
-       </View>
+       </View> */}
       <View className='mainType'>
         {classifyList.map(item=>{
  return <View onClick={this.handleJumpToDetail.bind(this,item.id)}>
@@ -175,8 +195,8 @@ export default class Index extends Component {
       scrollWithAnimation	
 	    enableFlex	
     >
-      {[1,2,3,4,5,6,7,8].map(()=>{
-        return  <Image src='cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/banner.jpg' style={{display: 'inline-block'}}></Image>
+      {honorList.map((item)=>{item
+        return  <Image src={item} style={{display: 'inline-block'}} mode="heightFix"></Image>
       })}
      
 	</ScrollView>

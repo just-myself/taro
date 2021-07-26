@@ -27,6 +27,12 @@
         {
           "name": "pages/product/productDetail",
           "pathName": "pages/product/productDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/customerCase/customerCaseList",
+          "pathName": "pages/customerCase/customerCaseList",
           "scene": null
         }
       ]
