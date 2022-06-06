@@ -35,37 +35,37 @@ export default class About extends Component {
       }
     })
   }
-  formSubmit = e => {
-    console.log(e)
-    const {value} = e.detail
- try {
-  const db = wx.cloud.database()
-  const customerMsg = db.collection('customerMsg')
-  console.log(customerMsg,'customerMsg');
-  customerMsg.add({
-      data:{ ...value,
-    },
-    success: function (res) {
-      // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
-      console.log('--------------',res)
-    },
-    fail:err=>{
-      console.log(err);
+//   formSubmit = e => {
+//     console.log(e)
+//     const {value} = e.detail
+//  try {
+//   const db = wx.cloud.database()
+//   const customerMsg = db.collection('customerMsg')
+//   console.log(customerMsg,'customerMsg');
+//   customerMsg.add({
+//       data:{ ...value,
+//     },
+//     success: function (res) {
+//       // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+//       console.log('--------------',res)
+//     },
+//     fail:err=>{
+//       console.log(err);
       
-    }
-    })
-  } catch (error) {
-    console.log(error,'---2222');
+//     }
+//     })
+//   } catch (error) {
+//     console.log(error,'---2222');
     
-  }
+//   }
 
 
 
-  }
+//   }
 
-  formReset = e => {
-    console.log(e)
-  }
+  // formReset = e => {
+  //   console.log(e)
+  // }
 
 
   render () {
@@ -78,7 +78,7 @@ export default class About extends Component {
       color:"#000",
       borderWidth:0,
       // bgColor:'rgba(0,0,0,0.2)',//背景颜色，可使用rgba
-      anchorY:10,
+      anchorY:0,
       fontSize:12,
       display:"ALWAYS",
     }, 
@@ -88,10 +88,10 @@ export default class About extends Component {
 
     }]
     const bannerList = [
-      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/aboutUs/3_qcd1-tuya.jpg',
-      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/aboutUs/2_wiwz.jpg',
-      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/aboutUs/5_k66t.jpg',
-      'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/aboutUs/4_zoyk-tuya.jpg'
+      'cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/aboutUs/3_qcd1-tuya.jpg',
+      'cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/aboutUs/2_wiwz.jpg',
+      'cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/aboutUs/5_k66t.jpg',
+      'cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/aboutUs/4_zoyk-tuya.jpg'
 
 
     ]
@@ -180,7 +180,7 @@ export default class About extends Component {
        
           </View>
         </View>
-        <View className="formStyle">
+        {/* <View className="formStyle">
         <Form onSubmit={this.formSubmit} onReset={this.formReset} >
         <View className='example-body'>
           <View className="formTitle"><Text>{'*'}</Text>留言主题：</View>
@@ -195,7 +195,7 @@ export default class About extends Component {
         <Button form-type='submit' className='btn-max-w' plain type='primary'>马上提交</Button>
       </Form>
 
-        </View>
+        </View> */}
 
       </View>
     )

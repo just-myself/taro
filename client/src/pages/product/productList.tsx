@@ -16,6 +16,7 @@ export default class ProductList extends Component {
 
     const db = wx.cloud.database()
     const productList = db.collection('productList')
+    console.log(productList,'productList--productList')
     productList.orderBy('index', 'asc').get().then(res => {
       console.log(res, '---');
       this.setState({
@@ -32,7 +33,7 @@ export default class ProductList extends Component {
     })
   }
   render() {
-    const banner = 'cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/9foj.jpg'
+    const banner = 'cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/9foj.jpg.jpg'
     console.log(this, 'this');
 
     const { productList } = this.state

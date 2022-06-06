@@ -35,7 +35,7 @@ componentDidMount(){
 handleJumpItem(url){
   console.log('url',url);
   
-  jump({url})
+  // jump({url})
 
 }
   render(){
@@ -43,7 +43,7 @@ handleJumpItem(url){
 
     return (
       <View className="customerCase">
-        <Image src="cloud://leidaibo-2guczo71ec52d1ae.6c65-leidaibo-2guczo71ec52d1ae-1303852253/image/customerCase/fo4g.jpg" className="banner" mode="widthFix"></Image>
+        <Image src="cloud://company-project-1-7e2ye1ae7ef6e7.636f-company-project-1-7e2ye1ae7ef6e7-1306309279/customerCase/fo4g.jpg" className="banner" mode="widthFix"></Image>
 
     
       <View className='customerCaseList'>

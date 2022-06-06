@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'myTaro',
   date: '2021-4-24',
@@ -11,6 +12,9 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias:{
+    '@assets':path.resolve(__dirname,'..','src/assets')
   },
   copy: {
     patterns: [
