@@ -117,7 +117,7 @@ export default class About extends Component {
           </View>
           <View>
           <View>
-          广东栢思特威新能源科技有限公司是基于东莞市富仕节能科技有限公司原有成熟的技术及产品，整合各方的战略资源，规范企业管理等进行重组，主要节能产品是注塑机节能、空压机节能、硫化机节能、智能烘干系统、智能供热系统、变压器节能、智能楼宇节能、绿色照明节能等，先后开发了多款超高节电率的节能产品。
+          东莞市富仕节能科技有限公司，主要节能产品是注塑机节能、空压机节能、硫化机节能、智能烘干系统、智能供热系统、变压器节能、智能楼宇节能、绿色照明节能等，先后开发了多款超高节电率的节能产品。
 
 
           </View>
@@ -145,7 +145,7 @@ export default class About extends Component {
               <View>邮箱：3618286888@qq.com</View>
               <View>网址：www.gdbstw.com</View>
               <View>办公地址：东莞市松山湖科技二路中科创新广场A座502室</View>
-              <View>生产地址:   东莞市寮步镇凫山村金华二街3号之二</View>
+              <View>生产地址：东莞市寮步镇凫山村金华二街3号之二</View>
 
        
           </View>
@@ -166,14 +166,14 @@ export default class About extends Component {
           <View className="jumpAddress">
             <Image src={address} />
             <View  onClick={this.getLocation}>
-              <View>广东省东莞市凫山兴华百货南100米</View>
+              <View>东莞市寮步镇凫山村金华二街3号之二</View>
               <View>{'>'}</View>
             </View>
           </View>
           <View className="jumpAddress">
             <Image src={compony} />
             <View >
-            广东栢思特威新能源科技有限公司,为客户提供社会效益与经济效益为一体的节能减排产品和一体化解决方案，建成国内全方位新型环保清洁能源提供商。
+            东莞市富仕节能科技有限公司,为客户提供社会效益与经济效益为一体的节能减排产品和一体化解决方案，建成国内全方位新型环保清洁能源提供商。
             </View>
           </View>
           
